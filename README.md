@@ -9,6 +9,6 @@ You can Visit the Demo website for AnnotateJs by click any of the below links:
 ### <a href="https://deepeshdragoneel.github.io/sampleWebsite/" target="_blank">Demo Website: 1</a>
 ### <a href="https://deepeshdragoneel.github.io/sampleWebsite2/" target="_blank">Demo website: 2</a>
 
-# You can find my original repositories here:
+# You can find my original repositories with commit history here:
 ### <a href="https://github.com/DeepeshDragoneel/AnnotateJs" target="_blank">Frontend Javascript Repository</a>
 ### <a href="https://github.com/DeepeshDragoneel/AnnotateJsBackend" target="_blank">Backend Repository</a>
