@@ -1,0 +1,87 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.CommentBoxMainDiv {
+    z-index: 99999991;
+    border: 2px solid black;
+    width: 20rem;
+    padding: 10px;
+    .CommentBoxUserDetailsDiv {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+        .CommentBoxUserDetailsAvatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .CommentBoxUserDetailsDiv {
+            padding: 0;
+            margin: 0;
+            .CommentBoxUserDetailsP {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: black;
+                margin: 0;
+            }
+        }
+    }
+    .commentBoxTextarea {
+        width: 100%;
+        outline: none !important;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        resize: none;
+        font-size: 1rem;
+        font-weight: 700;
+        color: black;
+        margin: 0;
+        &:focus {
+            outline: none !important;
+        }
+    }
+    .commentBoxButtonDiv {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0;
+        .commentBoxSubmitButton {
+            width: 6rem;
+            height: 2rem;
+            // border: 2px solid black;
+            border-radius: 5px;
+            background-color: #5b85c0;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0 1rem 0 0;
+            &:hover {
+                background-color: #34619e;
+            }
+        }
+        .commentBoxCancelButton {
+            width: 6rem;
+            height: 2rem;
+            // border: 2px solid black;
+            border-radius: 5px;
+            border: 2px solid #5b85c0;
+            color: #5b85c0;
+            background-color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+                border: 2px solid #34619e;
+                color: #34619e;
+            }
+        }
+    }
+}

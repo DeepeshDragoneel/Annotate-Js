@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500&family=Ubuntu&display=swap");
+
+.annotateJsSideBarMainDiv {
+    overflow-y: scroll;
+    padding: 1.2rem;
+    .annotateJsSideBarHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .annotateJsSideBarH1 {
+            font-size: 1.5em;
+            font-weight: 800;
+            margin: 0;
+            padding: 0;
+            font-family: "Ubuntu", sans-serif;
+            padding: 1rem;
+        }
+        .annotateJsSideBarButtonDiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem;
+            .annotateJsSideBarButton {
+                font-size: 1.2em;
+                font-weight: 800;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                width: 2rem !important;
+                .css-8je8zh-MuiTouchRipple-root {
+                    width: 2rem !important;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+    .annotateJsSideBarBody {
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .annotateJsSideBarBodyDiv {
+            padding: 0.5rem;
+            width: 100%;
+            background-color: #ebebeb;
+            margin: 0.5rem !important;
+            margin: 1rem 0;
+            cursor: pointer;
+            &:hover {
+                background-color: #eeeeee;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                //will be zoomed in on hover
+                zoom: 1.1;
+                transition: all 1s cubic-bezier(.25,.8,.25,1);
+            }
+            .annotateJsSideBarBodyDivProfile {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .annotateJsSideBarBodyDivProfileImg {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                    margin: 0.5rem;
+                    margin-left: 0;
+                }
+                .annotateJsSideBarBodyDivProfileName {
+                    font-size: 0.8rem;
+                    font-weight: normal;
+                    margin: 0;
+                    padding: 0;
+                    font-family: "Montserrat", sans-serif;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    .annotateJsSideBarBodyDivProfileNameP {
+                        font-weight: 500;
+                        margin: 0;
+                    }
+                    .annotateJsSideBarBodyDivTime {
+                        color: grey;
+                        margin: 0;
+                    }
+                }
+            }
+            .annotateJsSideBarBodyDivComment {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .annotateJsSideBarBodyDivCommentP {
+                    font-size: 0.9rem;
+                    font-weight: normal;
+                    margin: 0;
+                    padding: 0;
+                    font-family: "Montserrat", sans-serif;
+                }
+            }
+        }
+    }
+}
+
+.noIssuesFoundAnnotateJs{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}

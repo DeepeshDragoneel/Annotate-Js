@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+$Lato: "Lato", sans-serif;
+$Open-sans: "Open Sans", sans-serif;
+$dark-gray: #3c3c3c;
+$light-gray: #a6a6a6;
+$UIblue: #3cbbf7;
+$UIred: #e74c3c;
+$UIyellow: #f8e71c;
+$UIgreen: #13bf11;
+$dark-brown: #542900;
+
+.AnnotateStartMenuMainDiv {
+    border: 2px solid black;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .AnnotateStartMenuMainDivPTag {
+        margin: 0 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: 0.025em;
+        color: #5b85c0;
+        font-weight: bold;
+        background-image: -webkit-linear-gradient(
+            90deg,
+            #a558d4 0%,
+            #34619e 80%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: hue 60s infinite linear;
+    }
+    .switch-flat {
+        height: 35px;
+        width: 35px;
+        margin: 0;
+        background-image: -webkiet-linear-gradient(#ece9e9 10%, #ffffff 100%);
+        background-image: linear-gradient(#ece9e9 10%, #ffffff 100%);
+        -webkit-box-shadow: inset 0px 1px 1px #aeaaaa;
+        box-shadow: inset 0px 1px 1px #aeaaaa;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .flat-container {
+            height: 70px;
+            width: 35px;
+            color: $light-gray;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 18px;
+            line-height: 35px;
+            font-weight: 400;
+            -moz-transition: 0.2s ease-in-out;
+            -webkit-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+            border-radius: 50%;
+        }
+
+        .flat {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            z-index: -1;
+            cursor: pointer;
+            &.flat-off {
+                background: transparent;
+                color: black;
+            }
+
+            &.flat-on {
+                color: white;
+                font-size: 15px;
+            }
+        }
+
+        .clickedTheAnnotatorButtonTransition {
+            transform: translateY(-35px) !important;
+        }
+    }
+    .clickedTheAnnotatorButton {
+        background: #ff1d19 !important;
+    }
+    .didNotClickedTheAnnotatorButton {
+        background: rgba(19, 191, 17, 0.7) !important;
+        -webkit-box-shadow: inset 0px 1px 1px $UIgreen !important;
+        box-shadow: inset 0px 1px 1px $UIgreen !important;
+    }
+    .AnnotateStartMenuMainDivHelp {
+        margin: 0 0.5rem 0 0.5rem;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.2rem;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: 0.025em;
+        color: #5b85c0;
+        font-weight: bold;
+        box-shadow: inset 0px 1px 1px #aeaaaa;
+        background-image: -webkit-linear-gradient(
+            90deg,
+            #a558d4 0%,
+            #34619e 80%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: hue 60s infinite linear;
+    }
+    .AnnotateStartMenuMainDivLogout{
+        margin: 0 0.5rem 0 0.5rem;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.2rem;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: 0.025em;
+        color: #5b85c0;
+        font-weight: bold;
+        box-shadow: inset 0px 1px 1px #aeaaaa;
+        background-image: -webkit-linear-gradient(
+            90deg,
+            #a558d4 0%,
+            #34619e 80%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: hue 60s infinite linear;
+    }
+    .AnnotateStartMenuMainDivIssues {
+        margin: 0 0.5rem 0 1rem;
+        color: linear-gradient(#ff9191 10%, #e9c06d 100%) !important;
+        background-image: -webkit-linear-gradient(
+            90deg,
+            #ff9191 0%,
+            #e9c06d 80%
+        ) !important;
+    }
+}
